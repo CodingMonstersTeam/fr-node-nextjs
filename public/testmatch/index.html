@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Human Face Match</title>
+    <meta name="viewport" content="width=device-width, shrink-to-fit=yes">
+    <meta name="description" content="Human Face Matching Demo">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./facematch.js" type="module"></script>
+    <style>
+      /* styles.css */
+body {
+  font-family: 'Lato', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results {
+  text-align: center;
+}
+
+.text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+
+.result-text {
+  font-size: 20px;
+  color: #ffeb3b; /* Highlight color for similarity result */
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="results">
+        <div class="text" id="title">Face Similarity Matching</div>
+        <div id="images" class="images-container"></div>
+        <div id="result" class="result-text"></div>
+      </div>
+    </div>
+  </body>
+</html>
